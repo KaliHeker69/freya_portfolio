@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freya - Generative AI Enthusiast & Developer</title>
+    <meta name="description" content="Portfolio of Freya - Generative AI enthusiast, software developer, and final-year student">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero" class="logo-link">Freya</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#demo" class="nav-link">Demo</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-headline">
+                        Hi — I'm <strong>Freya</strong>,<br>
+                        <span class="animated-text" id="animated-text">Generative AI enthusiast</span>
+                    </h1>
+                    <p class="hero-subline">Building the future with intelligent algorithms and creative code</p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">See Projects</a>
+                        <a href="#" class="btn btn-secondary" id="resume-btn">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card" id="hero-card">
+                        <div class="card-content">
+                            <div class="avatar">
+                                <div class="avatar-inner">F</div>
+                            </div>
+                            <div class="particles" id="particles"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Timeline Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About & Journey</h2>
+                <p>Passionate about the intersection of AI and human creativity</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>I'm a final-year computer science student with a deep fascination for generative AI and its potential to transform how we create and interact with technology. My journey spans from traditional software development to cutting-edge machine learning applications.</p>
+                    
+                    <div class="badges">
+                        <span class="badge">Final Year Student</span>
+                        <span class="badge">Stanford University</span>
+                        <span class="badge">Python • JavaScript • PyTorch</span>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Started CS Degree</h4>
+                            <p>Began studying Computer Science with focus on AI/ML</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>AI Research Internship</h4>
+                            <p>Summer internship at tech startup working on NLP models</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Generative AI Focus</h4>
+                            <p>Specialized in generative models and created multiple projects</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2025">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Senior Capstone</h4>
+                            <p>Working on multimodal AI system for creative applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p>Technologies and tools I use to bring ideas to life</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Generative AI</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip" data-level="90" data-context="5+ projects">
+                            <span>PyTorch</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="85" data-context="Research experience">
+                            <span>Transformers</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="80" data-context="Multiple implementations">
+                            <span>Diffusion Models</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="75" data-context="Creative projects">
+                            <span>GANs</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip" data-level="90" data-context="Daily use">
+                            <span>JavaScript</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="85" data-context="Modern frameworks">
+                            <span>React</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="80" data-context="Production apps">
+                            <span>TypeScript</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="85" data-context="Responsive design">
+                            <span>CSS/Tailwind</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip" data-level="90" data-context="Primary language">
+                            <span>Python</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="75" data-context="API development">
+                            <span>Node.js</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="70" data-context="Database design">
+                            <span>PostgreSQL</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="80" data-context="Cloud deployment">
+                            <span>Docker</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-chips">
+                        <div class="skill-chip" data-level="85" data-context="Version control">
+                            <span>Git</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="80" data-context="Cloud platforms">
+                            <span>AWS</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="75" data-context="Data analysis">
+                            <span>Jupyter</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                        <div class="skill-chip" data-level="70" data-context="Design tools">
+                            <span>Figma</span>
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-graph">
+                <svg viewBox="0 0 300 200" class="skill-svg">
+                    <path class="skill-path" d="M50,150 Q100,50 150,100 T250,80" fill="none" stroke="url(#gradient)" stroke-width="3"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Exploring the boundaries of AI and creative technology</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <article class="project-card" data-category="ai research">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🎨</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Neural Style Transfer Studio</h3>
+                        <p>Real-time artistic style transfer using optimized neural networks</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">WebGL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn secondary">View Code</a>
+                        </div>
+                        <div class="project-metrics">
+                            <span>Demo: 2s processing</span>
+                            <span>Source: GitHub</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="ai web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>💬</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Intelligent Chat Interface</h3>
+                        <p>Context-aware chatbot with personality adaptation and memory</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Vue.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">Try Demo</a>
+                            <a href="#" class="project-btn secondary">View Code</a>
+                        </div>
+                        <div class="project-metrics">
+                            <span>Response: <500ms</span>
+                            <span>Source: GitHub</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>📊</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Visualization Platform</h3>
+                        <p>Interactive dashboard for exploring complex datasets with AI insights</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">Open App</a>
+                            <a href="#" class="project-btn secondary">View Code</a>
+                        </div>
+                        <div class="project-metrics">
+                            <span>Load: 1.2s</span>
+                            <span>Source: GitHub</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="research ai">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🧠</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multimodal Learning Framework</h3>
+                        <p>Research project combining vision and language for creative applications</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">CLIP</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">Read Paper</a>
+                            <a href="#" class="project-btn secondary">View Code</a>
+                        </div>
+                        <div class="project-metrics">
+                            <span>Accuracy: 94.2%</span>
+                            <span>Source: GitHub</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Text Transformer</h2>
+                <p>Try this mini generative AI demo</p>
+            </div>
+            
+            <div class="demo-widget">
+                <div class="demo-input">
+                    <label for="demo-text">Enter your text:</label>
+                    <textarea id="demo-text" placeholder="Type something here to transform...">Artificial intelligence is revolutionizing the way we interact with technology and is opening up new possibilities for creative expression and problem-solving.</textarea>
+                </div>
+                
+                <div class="demo-controls">
+                    <label for="transform-type">Transformation:</label>
+                    <select id="transform-type">
+                        <option value="shorten">Make it shorter</option>
+                        <option value="formal">Make it formal</option>
+                        <option value="casual">Make it casual</option>
+                        <option value="tweet">Turn into tweet</option>
+                    </select>
+                    <button id="generate-btn" class="btn btn-primary">Generate</button>
+                </div>
+                
+                <div class="demo-output">
+                    <div class="thinking" id="thinking">
+                        <span>Thinking</span>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="output-text" id="output-text"></div>
+                    <button class="copy-btn" id="copy-btn" title="Copy to clipboard">
+                        <span class="copy-icon">📋</span>
+                        <span class="copy-text">Copy</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p>Always open to discussing new opportunities and collaborations</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:freya@example.com">freya@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/freya" target="_blank">linkedin.com/in/freya</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/freya" target="_blank">github.com/freya</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <span>San Francisco, CA</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Freya. Built with curiosity and code.</p>
+                <div class="footer-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
